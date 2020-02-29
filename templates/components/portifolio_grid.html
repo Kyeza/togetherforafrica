@@ -1,0 +1,47 @@
+{% load static %}
+
+{# Portfolio Grid #}
+<section class="bg-light page-section" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Our Projects</h2>
+                <h3 class="section-subheading text-muted">
+                    We carry out different projects in different communities in sectors such as health and sanitation,
+                    access to clean water, agriculture, skills training, incubation of new businesses, management and
+                    leadership training, etc.
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{%  static 'app/img/portfolio/incubator.jpg' %}" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Incubator Project</h4>
+                    <p class="text-muted">Innovation</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{% static 'app/img/portfolio/water_sanitation.jpg' %}" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Water & Sanitation project</h4>
+                    <p class="text-muted">Graphic Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

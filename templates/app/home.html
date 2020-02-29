@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {# Header #}
+    {% include 'components/header.html' %}
+    {# END Header #}
+
+    {# Portifolio grid #}
+    {% include 'components/portifolio_grid.html' %}
+    {# END Pprtifolio grid #}
+
+    {# About #}
+    {% include 'components/about.html' %}
+    {# END About #}
+
+    {# Team #}
+    {% include 'components/team.html' %}
+    {# END Team #}
+
+    {# Contacts #}
+    {% include 'components/contacts.html' %}
+    {# END Contacts #}
+
+    {# Project models #}
+    {% include 'components/model.html' %}
+    {# END Projects Models #}
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+            let readMoreBtn = $("#about_toggle_btn");
+            let bgReadMoreBtn = $("#bg_toggle_btn");
+            readMoreBtn.click(function () {
+                let elem = readMoreBtn.text();
+                if (elem === "Read More") {
+                    //Stuff to do when btn is in the read more state
+                    readMoreBtn.text("Read Less");
+                    $("#read_more").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    readMoreBtn.text("Read More");
+                    $("#read_more").slideUp();
+                }
+            });
+
+            bgReadMoreBtn.click(function () {
+                let elem = bgReadMoreBtn.text();
+                if (elem === "Read More") {
+                    //Stuff to do when btn is in the read more state
+                    bgReadMoreBtn.text("Read Less");
+                    $("#read_more_bg").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    bgReadMoreBtn.text("Read More");
+                    $("#read_more_bg").slideUp();
+                }
+            });
+        });
+    </script>
+{% endblock %}

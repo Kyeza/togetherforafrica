@@ -1,0 +1,83 @@
+{% load static %}
+
+{# Portfolio Modals #}
+
+{# Modal 1 #}
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            {# Project Details Go Here #}
+                            <h2 class="text-uppercase">Incubator Project</h2>
+                            <p class="item-intro text-muted">Innovation</p>
+                            <img class="img-fluid d-block mx-auto" src="{% static 'app/img/portfolio/incubator.jpg' %}" alt="">
+                            <p>
+                                We are developing a solar powered incubator and already done with the prototype and
+                                tested it to be at 98% efficiency, we hope to improve this with more funding and also
+                                expand it to becoming an incubator making plant where we shall still transfer these
+                                skills to the youths, and also help solve the unstable power system problems which
+                                hinder poultry in some different African countries.
+                            </p>
+                            <ul class="list-inline">
+                                <li>Date: January 2017</li>
+                                <li>Category: Innovation</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal 2 #}
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            {# Project Details Go Here #}
+                            <h2 class="text-uppercase">Water & Sanitaion Project</h2>
+                            <img class="img-fluid d-block mx-auto"
+                                 src="{% static 'app/img/portfolio/water_sanitation.jpg' %}" alt="">
+                            <p>
+                                We advocate for clean water supplies in local areas and partner with different
+                                organisations, local and central governments to find means of how to avail clean water
+                                facilities to the affected areas. We carry out mass sensitisation mobilised by the
+                                youths to address the different problems of their community that are related to
+                                sanitation.
+                            </p>
+                            <ul class="list-inline">
+                                <li>Date: January 2017</li>
+                                <li>Category: Community</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
