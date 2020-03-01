@@ -1,1 +1,1 @@
-web: python manage.py rumserver
+web: python manage.py runserver
