@@ -1,1 +1,1 @@
-web: gunicorn togetherforafrica.wsgi
+web: python manage.py rumserver
